@@ -12,8 +12,6 @@ body {
     color: white;
 
     font-family: 'Roboto', sans-serif;
-
-    height: 200rem;
 }
 
 li {
@@ -22,4 +20,8 @@ li {
 
 a {
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }

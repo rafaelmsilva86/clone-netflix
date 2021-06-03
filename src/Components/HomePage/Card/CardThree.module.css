@@ -1,0 +1,128 @@
+.card {
+    border-bottom: 8px solid #222;
+
+    height: 472px;
+
+    display: flex;
+    align-items: center;
+}
+
+.cardContainer {
+    max-width: 1072px;
+
+    margin: 0 auto;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+
+    align-items: center;
+}
+
+.cardGridContentText h1 {
+    font-size: 3.125rem;
+    margin-bottom: 16px;
+}
+
+.cardGridContentText p {
+    font-size: 1.625rem;
+}
+
+
+.cardGridContentImage {
+    position: relative;
+    
+    width: 100%;
+}
+
+.cardImage {
+    position: relative;
+    z-index: 1;
+
+    max-width: 110%;
+
+}
+
+.cardVideo {
+    max-width: 22rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 5.75rem;
+}
+
+@media(max-width: 1024px) {
+    .card {
+        height: auto;
+
+        padding: 6rem 0;
+    }
+
+    .cardGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .cardGridContentText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardGridContentText p {
+        max-width: 50.93rem;
+        text-align: center;
+    }
+
+    .cardGridContentImage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardVideo {
+        max-width: 25rem;
+        top: 5rem;
+        left: 12.75rem;
+    }
+}   
+
+@media(max-width: 425px) {
+
+    .card {
+        padding: 4rem 0;
+    }
+
+    .cardGridContentText h1 {
+        font-size: 1.625rem;
+        margin-bottom: 16px;
+    }
+    
+    .cardGridContentText p {
+        font-size: 1.125rem;
+
+        max-width: 19.5rem;
+    }
+
+    .cardImage {
+        max-width: 95%;
+    }
+
+    .cardVideo {
+        max-width: 16rem;
+        top: 2.2rem;
+        left: 5rem;
+    }
+    
+}
+
+@media(max-width: 320px) {
+    .cardGridContentText p {
+        max-width: 17.5rem;
+    }
+
+    .cardVideo {
+        max-width: 11rem;
+        top: 2.2rem;
+        left: 4.5rem;
+    }
+}

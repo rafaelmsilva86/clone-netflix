@@ -4,10 +4,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    height: 101vh;
+    min-height: 101vh;
 
     overflow: hidden;
     border-bottom: 8px solid #222;
+
+    padding: 0;
 }
 
 .backgroundGradient {
@@ -46,18 +48,18 @@
 .featured .backgroundGradient header ul li:first-child {
     border: 1px solid white;
 
+    font-size: 14px;
+
     padding: 7px 7px;
     border-radius: .2rem;
 
     background: #00000066;
 
     text-align: center;
-}
 
-.featured .backgroundGradient header ul li:first-child::after {
-    content: '▼';
-
-    margin-left: .2rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 
 .featured .backgroundGradient header ul li:last-child {
@@ -66,7 +68,12 @@
     background: #E50914;
     border-radius: .2rem;
 
+    display: flex;
+    align-items: center;
+
     text-align: center;
+
+    cursor: pointer;
 }
 
 .featuredContent {
@@ -86,7 +93,7 @@
 .featuredContent h1 {
     font-size: 3.125rem;
 
-    max-width: 39.75rem;
+    max-width: 32.43rem;
 }
 
 .featuredContent p {
@@ -98,14 +105,14 @@
 }
 
 .featuredContent span {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
 
     margin: 1rem 0;
 
-    max-width: 41.37rem;
+    max-width: 40.93rem;
 }
 
-.featuredContent div form {
+.contentForm form {
     height: 3.75rem;
 
     padding: 0;
@@ -114,22 +121,26 @@
     display: flex;
 }
 
-.featuredContent input {
+.contentForm input {
     font-size: .875rem;
 
     padding: 20px 10px;
 
-    width: 28.25rem;
+    width: 28.06rem;
     height: 100%;
 
     margin-top: 0;
 }
 
-.featuredContent button {
+.contentForm input:focus {
+    outline: none;
+}
+
+.contentForm button {
     outline: none;
     border: none;
 
-    width: 11.62rem;
+    width: 11.05rem;
     height: 100%;
 
     border: none;
@@ -148,12 +159,200 @@
     align-items: center;
 }
 
-.featuredContent button:hover {
+.contentForm button:hover {
     background-color: #f40612;
 }
 
-.featuredContent button img {
+.contentForm button img {
     margin-left: 17px;
 
     width: .5rem;
+}
+
+.questionTitle {
+    width: 100%;
+    margin-top: 4.8rem;
+    margin-bottom: 3.31rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.questionTitle h1 {
+    font-size: 3.125rem;
+}
+
+.contact {
+    margin-top: 73px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 8px solid #222;
+
+    padding-bottom: 80px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+@media(max-width: 1440px) {
+    .featuredContent h1 {
+        max-width: 40.62rem;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .featuredContent {
+        width: 100vw;
+    }
+
+    .featuredContent h1 {
+        max-width: 640px;;
+    }
+
+    .featuredContent p {
+        font-size: 1.625rem;
+    
+        max-width: 32.56rem;
+    }
+
+    .featuredContent span {
+        font-size: 1.43rem;
+
+        max-width: 25.31rem;
+    }
+
+    .contentForm form {
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+
+        align-items: center;
+    }
+
+    .contentForm button {
+        outline: none;
+        border: none;
+    
+        width: 7.06rem;
+        height: 2.62rem;
+    
+        font-size: 1rem;
+
+        margin-top: 1rem;
+    }
+
+    .questionTitle h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact p {
+        max-width: 25.5rem;
+        text-align: center;
+
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .featured .backgroundGradient header {
+        padding: 15px 1rem;
+    }
+
+    .featured .backgroundGradient header img {
+        width: 6.25rem;
+        height: 1.5rem;
+    }
+
+    .featured .backgroundGradient header ul li + li {
+        margin-left: .75rem;
+    }
+
+    .featured .backgroundGradient header ul li:first-child {
+        padding: 3px 5px;
+        gap: .8px;
+
+    }
+
+    .featured .backgroundGradient header ul li:last-child {
+        padding: 3px 8px;
+        font-size: .9rem;
+    }
+
+    .featuredContent h1 {
+        font-size: 1.75rem;
+    
+        max-width: 22.25rem;
+    }
+
+    .featuredContent p,
+    .featuredContent span {
+        font-size: 1.12rem;
+    }
+
+    .featuredContent span {
+        max-width: 16.87rem;
+    }
+
+    .contentForm input {
+        padding: 15px 10px;
+    
+        width: 22rem;
+
+        margin: 0 1rem;
+    }
+
+    .questionTitle h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact p {
+        max-width: 18rem;
+
+        font-size: 1.125rem;
+    }
+
+}
+
+@media(max-width: 320px) {
+    .backgroundGradient {
+        background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%);
+    }
+
+    .featuredContent h1 {
+        margin-top: -3rem;
+    }
+
+    .featuredContent p {
+        font-size: 1.1rem;
+
+        max-width: 14.75rem;
+    }
+
+    .featuredContent span {
+        font-size: 1rem;
+
+        max-width: 16.62rem;
+    }
+
+    .contentForm input {
+        padding: 15px 10px;
+    
+        width: 18.05rem;
+    }
+
+    .questionTitle h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        padding: 80px 1rem 0 1rem;
+    }
+    
 }

@@ -1,0 +1,203 @@
+.card {
+    border-bottom: 8px solid #222;
+
+    height: 472px;
+}
+
+.containerCardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 100%;
+    max-width: 1072px;
+
+    margin: 0 auto;
+}
+
+.contentCardImage {
+
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.contentCardImage img {
+    width: 550px;
+}
+
+.contentCardImageCard {
+    background: black;
+    height: 6.37rem;
+    width: 20.93rem;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: .8rem;
+
+    position: absolute;
+
+    top: 289px;
+
+    padding: .5rem .7rem;
+
+    border: 2px solid rgba(255,255,255,.25);
+
+    border-radius: 1rem;
+}
+
+.contentCardImageCardMovie {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.contentCardImageCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentCardImageCardGif {
+    height: 100%;
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentCardImageCardText p:first-child {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contentCardImageCardText p:last-child {
+    font-size: .9rem;
+    color: #0071eb;
+}
+
+.contentCardText {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentCardText h1 {
+    font-size: 3.125rem;
+    margin-bottom: 16px;
+}
+
+.contentCardText p {
+    font-size: 1.625rem;
+}
+
+@media(max-width: 1024px) {
+    .card {
+        height: auto;
+
+        padding: 6rem 0;
+    }
+
+    .contentCardImage {
+        order: 2;
+    }
+
+    .contentCardText {
+        order: 1;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .containerCardGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .contentCardImage img {
+        width: 700px;
+    }
+
+    .contentCardImageCard {
+        top: 400px;
+
+        width: 25.93rem;
+    }
+
+    .contentCardImageCardText p:first-child {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .contentCardImageCardText p:last-child {
+        font-size: 1.1rem;
+        color: #0071eb;
+    }
+}
+
+@media(max-width: 425px) {
+    .card {
+        padding: 2rem 0;
+    }
+
+    .contentCardText h1 {
+        font-size: 1.625rem;
+
+        max-width: 18rem;
+        text-align: center;
+    }
+
+    .contentCardText p {
+        font-size: 1.125rem;
+        max-width: 23rem;
+
+        text-align: center;
+    }
+
+    .contentCardImage img {
+        width: 400px;
+    }
+
+    .contentCardImageCard {
+        top: 200px;
+
+        width: 18.93rem;
+        height: 5.2rem;
+    }
+
+    .contentCardImageCardText p:first-child {
+        font-size: .9rem;
+    }
+    
+    .contentCardImageCardText p:last-child {
+        font-size: .8rem;
+    }
+}
+
+@media(max-width: 320px) {
+    .contentCardText h1 {
+        max-width: 12.5rem;
+    }
+
+    .contentCardText p {
+        max-width: 16.5rem;
+    }
+
+    .contentCardImage img {
+        width: 300px;
+    }
+
+    .contentCardImageCard {
+        top: 140px;
+
+        width: 17rem;
+        height: 4.5rem;
+    }
+}
