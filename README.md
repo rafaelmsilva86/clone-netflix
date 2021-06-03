@@ -17,6 +17,7 @@ O clone é da Página principal da plataforma Netflix. Decidi desenvolver o proj
 O projeto foi desenvolcido utilizando as seguintes tecnologias:
 
 - React
+- React icons
 - CSS
 
 ---
