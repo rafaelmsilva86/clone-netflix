@@ -20,62 +20,6 @@
     background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);   
 }
 
-.featured .backgroundGradient header {
-    height: 5rem;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin: 0 auto;
-    padding: 15px 3.56rem;
-}
-
-.featured .backgroundGradient header img {
-    width: 8.25rem;
-    height: 2.3rem;
-}
-
-.featured .backgroundGradient header ul {
-    display: flex;
-}
-
-.featured .backgroundGradient header ul li + li {
-    margin-left: 2.18rem;
-}
-
-.featured .backgroundGradient header ul li:first-child {
-    border: 1px solid white;
-
-    font-size: 14px;
-
-    padding: 7px 7px;
-    border-radius: .2rem;
-
-    background: #00000066;
-
-    text-align: center;
-
-    display: flex;
-    align-items: center;
-    gap: 2px;
-}
-
-.featured .backgroundGradient header ul li:last-child {
-    padding: 7px 17px;
-
-    background: #E50914;
-    border-radius: .2rem;
-
-    display: flex;
-    align-items: center;
-
-    text-align: center;
-
-    cursor: pointer;
-}
-
 .featuredContent {
     width: 50vw;
 
@@ -110,63 +54,6 @@
     margin: 1rem 0;
 
     max-width: 40.93rem;
-}
-
-.contentForm form {
-    height: 3.75rem;
-
-    padding: 0;
-    margin: 0;
-
-    display: flex;
-}
-
-.contentForm input {
-    font-size: .875rem;
-
-    padding: 20px 10px;
-
-    width: 28.06rem;
-    height: 100%;
-
-    margin-top: 0;
-}
-
-.contentForm input:focus {
-    outline: none;
-}
-
-.contentForm button {
-    outline: none;
-    border: none;
-
-    width: 11.05rem;
-    height: 100%;
-
-    border: none;
-
-    font-size: 1.5rem;
-
-    background-color: #e50914;
-
-    color: white;
-    cursor: pointer;
-
-    opacity: .9;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contentForm button:hover {
-    background-color: #f40612;
-}
-
-.contentForm button img {
-    margin-left: 17px;
-
-    width: .5rem;
 }
 
 .questionTitle {
@@ -226,27 +113,6 @@
         max-width: 25.31rem;
     }
 
-    .contentForm form {
-        display: flex;
-        flex-direction: column;
-
-        height: auto;
-
-        align-items: center;
-    }
-
-    .contentForm button {
-        outline: none;
-        border: none;
-    
-        width: 7.06rem;
-        height: 2.62rem;
-    
-        font-size: 1rem;
-
-        margin-top: 1rem;
-    }
-
     .questionTitle h1 {
         font-size: 2.5rem;
     }
@@ -261,30 +127,6 @@
 
 @media(max-width: 425px) {
 
-    .featured .backgroundGradient header {
-        padding: 15px 1rem;
-    }
-
-    .featured .backgroundGradient header img {
-        width: 6.25rem;
-        height: 1.5rem;
-    }
-
-    .featured .backgroundGradient header ul li + li {
-        margin-left: .75rem;
-    }
-
-    .featured .backgroundGradient header ul li:first-child {
-        padding: 3px 5px;
-        gap: .8px;
-
-    }
-
-    .featured .backgroundGradient header ul li:last-child {
-        padding: 3px 8px;
-        font-size: .9rem;
-    }
-
     .featuredContent h1 {
         font-size: 1.75rem;
     
@@ -298,14 +140,6 @@
 
     .featuredContent span {
         max-width: 16.87rem;
-    }
-
-    .contentForm input {
-        padding: 15px 10px;
-    
-        width: 22rem;
-
-        margin: 0 1rem;
     }
 
     .questionTitle h1 {
@@ -339,12 +173,6 @@
         font-size: 1rem;
 
         max-width: 16.62rem;
-    }
-
-    .contentForm input {
-        padding: 15px 10px;
-    
-        width: 18.05rem;
     }
 
     .questionTitle h1 {
