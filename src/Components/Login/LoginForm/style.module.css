@@ -1,0 +1,161 @@
+.contentLogin {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/8dc3f88b-a96a-4d8a-af9a-a69e6f3b2506/5c809235-fe67-4a98-af86-95a0a5a51e74/BR-pt-20210524-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    
+    min-height: 125vh;
+
+    overflow: hidden;
+
+    padding: 0;
+}
+
+.backgroundGradient {
+    width: 100vw;
+    min-height: inherit;
+
+    background: rgba(0,0,0,.4);
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.473) 20%,rgba(0, 0, 0, 0.568) 80%);   
+}
+
+.headerLogin {
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 2.4rem;
+}
+
+.containerForm {
+    width: 28.8rem;
+    height: 100vh;
+
+    background: black;
+
+    margin: 0 auto;
+
+    padding: 4rem;
+    margin-top: .8rem;
+}
+
+.containerForm h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.containerForm .input {
+    width: 100%;
+
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    border-radius: .3rem;
+    border: none;
+
+    background: #333;
+}
+
+.containerForm .button {
+    width: 100%;
+
+    margin-top: 1rem;
+
+    background: #e50914;
+
+    border: none;
+    border-radius: .3rem;
+
+    padding: 1rem;
+
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.listForm {
+    margin-top: .8rem;
+    margin-bottom: 1rem; /**/
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.listForm li:first-child {
+
+    display: flex;
+}
+
+.listForm li:first-child input {
+    width: 1rem;
+    height: 1rem;
+
+    margin-right: .5rem;
+
+    margin-bottom: -.5rem;
+} 
+
+.listForm li:last-child{
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.listForm li:last-child a{
+    color: #b3b3b3;
+}
+
+.listForm li:last-child:hover a {
+    text-decoration: underline white;
+}
+
+.connectRede {
+    font-size: 13px;
+    color: #737373;
+    font-weight: 700;
+
+    margin-top: 3rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.connectRede img {
+    width: 1.2rem;
+    height: 1.2rem;
+
+    margin-right: .5rem;
+}
+
+.textNewUser {
+    color: #737373;
+    font-size: 16px;
+
+    margin-top: 1rem;
+}
+
+.textNewUser strong {
+    color: white;
+
+    font-weight: 100;
+}
+
+.textCaptcha {
+    font-size: 13px;
+    color: #8c8c8c;
+
+    margin-top: .8rem;
+}
+
+.textCaptcha a {
+    color: #0071eb;
+    cursor: pointer;
+}
+
+.textCaptcha a:hover {
+    text-decoration: underline #0071eb;
+}
